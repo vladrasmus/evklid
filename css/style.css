@@ -1,44 +1,39 @@
 /* Шрифты */
-
+/* montserrat-regular - latin_cyrillic */
 @font-face {
-    font-family: 'muller';
-    src: url('../fonts/MullerBold.woff2') format('woff2'),
-        url('../fonts/MullerBold.woff') format('woff');
-    font-display: swap;
-    font-weight: 700;
+    font-family: 'Montserrat';
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'muller';
-    src: url('../fonts/MullerLight.woff2') format('woff2'),
-        url('../fonts/MullerLight.woff') format('woff');
-    font-display: swap;
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'muller';
-    src: url('../fonts/MullerMedium.woff2') format('woff2'),
-        url('../fonts/MullerMedium.woff') format('woff');
-    font-display: swap;
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'muller';
-    src: url('../fonts/MullerRegular.woff2') format('woff2'),
-        url('../fonts/MullerRegular.woff') format('woff');
-    font-display: swap;
     font-weight: 400;
-    font-style: normal;
-}
+    src: url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
-:root {
-    --greyE5: #e5e5e5;
-}
+  /* montserrat-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* montserrat-800 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 /* Общие стили */
 * {
@@ -51,11 +46,10 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'muller', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #9c9c9c;
-    background-color: var(--greyE5);
 }
 
 a {
@@ -80,19 +74,48 @@ ul {
 .container {
     margin: 0 auto;
     max-width: 1770px;
+    width: 100%;
 }
 
 /* Основные стили */
 
 header {
-    background-color: #fff;
+    box-shadow: 0 0 50px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__main-logo {
+    margin-right: auto;
 }
 
 .header__menu {
     display: inline-block;
-    margin-left: auto;
 }
 
 .header__list {
     display: flex;
+}
+
+.header__item {
+    margin-right: 85px;
+}
+
+.header__link {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+.header____search {
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/Search.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    border: none;
 }
