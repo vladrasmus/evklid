@@ -206,6 +206,7 @@ header {
 	font-family: 'Montserrat';
 	font-size: 23.5px;
 	font-weight: bold;
+	line-height: 29px;
 	color: #fff;
 }
 
@@ -213,6 +214,11 @@ header {
 	margin-top: 97px;
 	width: 280px;
 	height: 80px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23.4581px;
 }
 
 /* --------------about_us-------------- */
@@ -225,7 +231,7 @@ header {
 	margin-top: 10px;
 	width: 1235px;
 
-	line-height: 20px;
+	line-height: 32px;
 }
 
 .about__cards {
@@ -297,3 +303,64 @@ header {
 	background-position: 63px 71px;
 }
 
+/* --------------How_do_we_work-------------- */
+
+.working {
+	margin-top: 100px;
+	height: 651px;
+}
+
+.working__steps {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 38px;
+	width: 469px;
+}
+
+.working__steps-item {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.working__wrapper {
+	display: flex;
+	margin-top: 49px;
+}
+
+.working__descr {
+	width: 758px;
+}
+
+.working__text {
+	margin-top: 10px;
+
+	line-height: 32px;
+}
+
+.working__buttons {
+	margin-top: 70px;
+}
+
+.working__show-more {
+	width: 175px;
+	height: 60px;
+}
+
+.working__agreement {
+	margin-left: 30px;
+	width: 147px;
+	height: 60px;
+
+	background-color: transparent;
+	border: 1px solid #333333;
+}
+
+.working__img {
+	margin-top: auto;
+	margin-left: auto;
+	width: 870px;
+	height: 465px;
+}
