@@ -365,6 +365,8 @@ header {
 	height: 465px;
 }
 
+/* --------------questions-------------- */
+
 .questions {
 	margin-top: 162px;
 }
@@ -420,4 +422,163 @@ header {
 	height: 31px;
 
 	background-color: #000;
+}
+
+/* --------------footer-------------- */
+
+
+footer {
+	margin-top: 100px;
+	background-color: #222;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 48px;
+	padding-left: 75px;
+	padding-bottom: 80px;
+}
+
+.footer__menu {
+	width: 317.08px;
+}
+
+.footer__list {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.footer__item {
+	margin-top: 12px;
+}
+
+.footer__link {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #CACACA;;
+}
+
+.footer__icons {
+	display: flex;
+	margin-top: 100px;
+}
+
+.footer__icon:not(:first-child) {
+	margin-left: 25px;
+}
+
+.footer__icon-link {
+	width: 60px;
+	height: 60px;
+}
+
+.footer__icon-facebook {
+	background-image: url('../img/fb.svg');
+}
+
+.footer__icon-vkontakte {
+	background-image: url('../img/vk.svg');
+
+}
+
+.footer__icon-instagram {
+	background-image: url('../img/instagram.svg');
+
+}
+
+.footer__request {
+	margin-top: 8px;
+	margin-left: 278px;
+}
+
+.footer__request-title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 59px;
+
+	color: #CACACA;
+}
+
+.footer__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__field:first-child {
+	margin-top: 31px;
+}
+
+.footer__field {
+	margin-top: 25px;
+	padding-left: 24px;
+	width: 570px;
+	height: 60px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	color: #CACACA;
+	
+	border: none;
+	background-color: #414141;
+}
+
+.footer__field-message {
+	padding-top: 14px;
+	height: 150px;
+	resize: none;
+}
+
+.footer__send {
+	margin-top: 31px;
+	width: 101%;
+}
+
+.footer__send-btn {
+	width: 269px;
+	height: 60px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.footer__send-checkbox {
+	margin-left: 22px;
+}
+
+.footer__send-agreement {
+	display: inline-block;
+	margin-left: 4px;
+	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.footer__involment {
+	margin-top: 85px;
+	margin-left: 236px;
+	width: 440px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
 }
