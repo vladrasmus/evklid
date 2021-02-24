@@ -510,6 +510,9 @@ header {
 	line-height: 32px;
 	color: #333333;
 
+	transition-property: color;
+	transition-duration: .3s;
+	transition-delay: .5s;
 	/* border-top: 1px solid #CACACA;
 	border-bottom: 1px solid transparent; */
 }
@@ -542,7 +545,11 @@ header {
 	height: 1px;
 	
 	background-color: #CACACA;
-	z-index: 1;
+}
+
+.questions__item:hover ~ .questions__item::before {
+	background-color: #FF9900;
+	opacity: 0;
 }
 
 .questions__item::before, .questions__item::after {
@@ -559,6 +566,8 @@ header {
 }
 
 .questions__item:hover::before {
+	display: block;
+
 	background-color: #FF9900;
 	z-index: 2;
 }
