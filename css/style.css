@@ -40,6 +40,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	z-index: 10;
 }
 
 html,
@@ -52,7 +53,7 @@ body {
 	font-size: 16px;
 	color: #333333;
 
-	overflow-x:hidden
+	/* overflow-x:hidden */
 }
 
 a {
@@ -82,7 +83,6 @@ button {
 	margin: 0 auto;
 
 	max-width: 1770px;
-	width: 100%;
 }
 
 .yellow-btn {
@@ -141,24 +141,32 @@ button {
 
 header {
 	height: 100px;
+	
 	box-shadow: 0 0 50px 0;
+}
+
+.header-container {
+	height: 100%;
+
+	text-align: center;
 }
 
 .header {
 	position: relative;
 	display: flex;
 	align-items: center;
+	height: 100%;
 }
 
 .header__main-logo {
-	margin-top: 14px;
+	margin-top: 3px;
 	margin-left: 19px;
 	margin-right: auto;
 }
 
 .header__menu {
 	display: inline-block;
-	margin-top: 31px;
+	margin-top: 21px;
 }
 
 .header__list {
@@ -211,7 +219,7 @@ header {
 	position: relative;
 	right: -10px;
 	display: block;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 64px;
 	width: 26px;
 	height: 27px;
@@ -269,6 +277,7 @@ header {
 }
 
 .solutions__btn {
+	display: block;
 	margin-top: 97px;
 	padding-top: 2px;
 	padding-left: 8px;
@@ -577,6 +586,9 @@ header {
 	z-index: 1;
 }
 
+.questions__text {
+	max-width: 90%;
+}
 
 .questions__btn {
 	position: relative;
@@ -585,6 +597,7 @@ header {
 	align-items: center;
 	margin-right: 6px;
 	width: 50px;
+	min-width: 50px;
 	height: 50px;
 
 	border: none;
@@ -679,6 +692,10 @@ footer {
 
 }
 
+.footer__icon-facebook, .footer__icon-vkontakte, .footer__icon-instagram {
+	background-repeat: no-repeat;
+}
+
 .footer__request {
 	margin-top: 11px;
 	margin-left: 282px;
@@ -746,11 +763,11 @@ footer {
 .footer__send-agreement {
 	display: inline-block;
 	
+	text-align: center;
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 32px;
 	color: #CACACA;
 }
 
@@ -766,4 +783,320 @@ footer {
 	font-size: 16px;
 	line-height: 32px;
 	color: #CACACA;
+}
+/* --------------media-------------- */
+/* Обнуление "лишних" свойств */
+@media (max-width:1770px) {
+	.header__search {
+		right: 0;
+	}
+
+	.solutions__descr {
+		padding-right: 78px;
+	}
+
+	.about, .working, .questions {
+		left: 0;
+	}
+
+	.about__show-more-card, .about__small-cards {
+		width: 49.2%;
+	}
+
+	.footer-container {
+		width: 100%;
+	}
+
+	.footer__involment {
+		position: relative;
+		right: 0;
+	}
+
+	.container {
+		max-width: 90%;
+	}
+
+	.about__show-more-descr {
+		padding-right: 54px;
+	}
+
+	.about__btn {
+		margin-left: 0;
+	}
+
+	.about__consultation, .about__increasing {
+		padding-top: 20px;
+	}
+
+	.small-card-text {
+		width: auto;
+	}
+
+	.working__img {
+		margin-top: 45px;
+		margin-left: 0;
+		width: 600px;
+		height: 320px;
+	}
+
+	.footer-container {
+		justify-content: space-between;
+		padding-right: 19px;
+	}
+
+	.footer__menu {
+		max-width: 21%;
+	}
+
+	.footer__request {
+		margin-left: 120px;
+		min-width: 30%;
+	}
+
+	.footer__field {
+		width: 100%;
+	}
+	
+	.footer__send {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer__send-btn {
+		width: 35%;
+	}
+
+	.footer__involment {
+		margin-left: 100px;
+		width: 0;
+		min-width: 22%;
+	}
+}
+
+@media (max-width:1366px)  {
+	.header {
+		justify-content: space-between;
+	}
+
+	.about__text {
+		width: auto;
+	}
+
+	.header__menu {
+		margin-right: auto;
+	}
+
+	.header__item:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	.header__search {
+		margin-left: 0;
+	}
+
+	.solutions__title {
+		font-size: 60px;
+	}
+
+	.solutions__btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about__cards {
+		flex-direction: column;
+	}
+
+	.about__show-more-card {
+		width: 100%;
+	}
+
+	.about__show-more-descr {
+		justify-content: space-around;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.about__show-more-text {
+		width: 75%;
+	}
+
+	.about__small-cards {
+		width: 100%;
+	}
+
+	.about__consultation, .about__increasing {
+		width: 100%;
+	}
+
+	.about__consultation {
+		margin-top: 20px;
+		padding-top: 78px;
+	}
+
+	.about__small-cards .about__increasing {
+		margin-top: 20px;
+		padding-top: 70px;
+	}
+
+	.working__wrapper {
+		position: relative;
+		flex-direction: column;
+		padding: 30px;
+
+		text-align: center;
+	}
+
+	.working__wrapper::before  {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background-color: rgba(0,0,0,.5);
+
+		z-index: 10;
+	}
+
+	.working__descr {
+		margin: 0 auto;
+	}
+
+	.working__title {
+		color: #fff;
+	}
+
+	.working__text {
+		color: #fff;
+	}
+
+	.working__buttons {
+		margin-top: 30px;
+	}
+
+	.working__agreement {
+		color: #fff;
+
+		border-color: #fff;
+	}
+
+	.working__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		width: 100%;
+		height: 100%;
+
+		z-index: 0;
+	}
+
+	.footer__menu {
+		margin-right: auto;
+		min-width: 23%;
+	}
+
+	.footer__logo {
+		width: 150px;
+	}
+
+	.footer__link {
+		font-size: 16px;
+	}
+
+	.footer__icon-link {
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__icon-facebook, .footer__icon-vkontakte, .footer__icon-instagram {
+		background-size: 40px 40px;
+	}
+
+	.footer__request  {
+		margin: 0 auto;
+		max-width: 40%;
+	}
+
+	.footer__request-title {
+		font-size: 32px;
+	}
+
+	.footer__send-btn {
+		font-size: 14px;
+	}
+
+	.footer__involment {
+		margin-top: 23px;
+		/* margin-left: 50px; */
+		margin-left: auto;
+
+
+		font-size: 12px;
+	}
+}
+
+@media (max-width:1024px) {
+	.solutions__descr {
+		width: 100%;
+	}
+
+	.solutions__text {
+		width: 100%;
+	}
+
+	.working__descr {
+		width: 100%;
+	}
+
+	.header__main-logo {
+		width: 150px;
+	}
+
+	.header__item:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.solutions__title {
+		font-size: 45px;
+		line-height: 60px;
+	}
+
+	.solutions__text {
+		line-height: 34px;
+	}
+
+	.about__consultation {
+		padding-top: 52px;
+	}
+
+	.about__small-cards .about__increasing {
+		padding-top: 36px;
+	}
+
+	.footer-container {
+		flex-wrap: wrap;
+	}
+
+	.footer__menu {
+		margin-top: 15px;
+		min-width: 45%;
+	}
+
+	.footer__request {
+		margin-right: 0;
+		margin-left: auto;
+		max-width: 50%;
+	}
+
+	.footer__send-checkbox {
+		margin-left: 5px;
+	}
+
+	.footer__send-agreement {
+		font-size: 12px;
+	}
 }
