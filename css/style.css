@@ -40,6 +40,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	z-index: 10;
 }
 
 html,
@@ -680,6 +681,10 @@ footer {
 
 }
 
+.footer__icon-facebook, .footer__icon-vkontakte, .footer__icon-instagram {
+	background-repeat: no-repeat;
+}
+
 .footer__request {
 	margin-top: 11px;
 	margin-left: 282px;
@@ -747,11 +752,11 @@ footer {
 .footer__send-agreement {
 	display: inline-block;
 	
+	text-align: center;
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 32px;
 	color: #CACACA;
 }
 
@@ -829,7 +834,7 @@ footer {
 	}
 
 	.footer__menu {
-		min-width: 21%;
+		max-width: 21%;
 	}
 
 	.footer__request {
@@ -925,6 +930,100 @@ footer {
 	}
 
 	.working__wrapper {
+		position: relative;
 		flex-direction: column;
+		padding: 30px;
+
+		text-align: center;
+	}
+
+	.working__wrapper::before  {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		background-color: rgba(0,0,0,.5);
+
+		z-index: 10;
+	}
+
+	.working__descr {
+		margin: 0 auto;
+	}
+
+	.working__title {
+		color: #fff;
+	}
+
+	.working__text {
+		color: #fff;
+	}
+
+	.working__buttons {
+		margin-top: 30px;
+	}
+
+	.working__agreement {
+		color: #fff;
+
+		border-color: #fff;
+	}
+
+	.working__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		width: 100%;
+		height: 100%;
+
+		z-index: 0;
+	}
+
+	.footer__menu {
+		margin-right: auto;
+		min-width: 23%;
+	}
+
+	.footer__logo {
+		width: 150px;
+	}
+
+	.footer__link {
+		font-size: 16px;
+	}
+
+	.footer__icon-link {
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__icon-facebook, .footer__icon-vkontakte, .footer__icon-instagram {
+		background-size: 40px 40px;
+	}
+
+	.footer__request  {
+		margin: 0 auto;
+		max-width: 40%;
+	}
+
+	.footer__request-title {
+		font-size: 32px;
+	}
+
+	.footer__send-btn {
+		font-size: 14px;
+	}
+
+	.footer__involment {
+		margin-top: 23px;
+		/* margin-left: 50px; */
+		margin-left: auto;
+
+
+		font-size: 12px;
 	}
 }
