@@ -52,7 +52,7 @@ body {
 	font-size: 16px;
 	color: #333333;
 
-	overflow-x:hidden
+	/* overflow-x:hidden */
 }
 
 a {
@@ -82,7 +82,6 @@ button {
 	margin: 0 auto;
 
 	max-width: 1770px;
-	width: 100%;
 }
 
 .yellow-btn {
@@ -141,6 +140,7 @@ button {
 
 header {
 	height: 100px;
+	
 	box-shadow: 0 0 50px 0;
 }
 
@@ -269,6 +269,7 @@ header {
 }
 
 .solutions__btn {
+	display: block;
 	margin-top: 97px;
 	padding-top: 2px;
 	padding-left: 8px;
@@ -766,4 +767,164 @@ footer {
 	font-size: 16px;
 	line-height: 32px;
 	color: #CACACA;
+}
+/* --------------media-------------- */
+/* Обнуление "лишних" свойств */
+@media (max-width:1770px) {
+	.header__search {
+		right: 0;
+	}
+
+	.solutions__descr {
+		padding-right: 78px;
+	}
+
+	.about, .working, .questions {
+		left: 0;
+	}
+
+	.about__show-more-card, .about__small-cards {
+		width: 49.2%;
+	}
+
+	.footer-container {
+		width: 100%;
+	}
+
+	.footer__involment {
+		position: relative;
+		right: 0;
+	}
+
+	.container {
+		max-width: 90%;
+	}
+
+	.about__show-more-descr {
+		padding-right: 54px;
+	}
+
+	.about__btn {
+		margin-left: 0;
+	}
+
+	.about__consultation, .about__increasing {
+		padding-top: 20px;
+	}
+
+	.small-card-text {
+		width: auto;
+	}
+
+	.working__img {
+		margin-top: 45px;
+		margin-left: 0;
+		width: 600px;
+		height: 320px;
+	}
+
+	.footer-container {
+		justify-content: space-between;
+		padding-right: 19px;
+	}
+
+	.footer__menu {
+		min-width: 21%;
+	}
+
+	.footer__request {
+		margin-left: 120px;
+		min-width: 30%;
+	}
+
+	.footer__field {
+		width: 100%;
+	}
+	
+	.footer__send {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer__send-btn {
+		width: 35%;
+	}
+
+	.footer__involment {
+		margin-left: 100px;
+		width: 0;
+		min-width: 22%;
+	}
+}
+
+@media (max-width:1366px)  {
+	.header {
+		justify-content: space-between;
+	}
+
+	.about__text {
+		width: auto;
+	}
+
+	.header__menu {
+		margin-right: auto;
+	}
+
+	.header__item:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	.header__search {
+		margin-left: 0;
+	}
+
+	.solutions__title {
+		font-size: 60px;
+	}
+
+	.solutions__btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about__cards {
+		flex-direction: column;
+	}
+
+	.about__show-more-card {
+		width: 100%;
+	}
+
+	.about__show-more-descr {
+		justify-content: space-around;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.about__show-more-text {
+		width: 75%;
+	}
+
+	.about__small-cards {
+		width: 100%;
+	}
+
+	.about__consultation, .about__increasing {
+		width: 100%;
+	}
+
+	.about__consultation {
+		margin-top: 20px;
+		padding-top: 78px;
+	}
+
+	.about__small-cards .about__increasing {
+		margin-top: 20px;
+		padding-top: 70px;
+	}
+
+	.working__wrapper {
+		flex-direction: column;
+	}
 }
