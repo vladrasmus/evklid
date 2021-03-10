@@ -6,13 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Евклид</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
 	<header>
 		<div class="container header-container">
 			<div class="header">
+				<button class="header__burger"></button>
 				<a href="#" class="header__main-logo">
 					<img src="img/evklid_logo.png" alt="Логотип Евклид">
 				</a>
@@ -53,6 +58,12 @@
 
 					<button class="solutions__btn yellow-btn">Заказать расчёт</button>
 				</div>
+
+				<picture>
+					<!-- <source media="(max-width: 1920px)" srcset="img/balconies.jpg"> -->
+					<source media="(max-width: 1024px)" srcset="img/balconies_1024.jpg">
+					<img class="solutions__background" src="img/balconies.jpg" alt="роскошные балконы">
+				</picture>
 			</section>
 
 			<section class="about">
@@ -82,6 +93,13 @@
 
 							<button class="about__btn">Подробнее</button>
 						</div>
+
+						<picture>
+							<!-- <source media="(max-width: 1920px)" srcset="img/worker.jpg"> -->
+							<source media="(max-width: 1024px)" srcset="img/worker_1024.jpg">
+							<img class="about__show-more-background" src="img/worker.jpg" alt="качественная работа">
+						</picture>
+						
 					</div>
 
 					<div class="about__small-cards">
@@ -139,7 +157,11 @@
 						</div>
 					</div>
 					
-					<img src="/img/consulting.jpg" alt="Проводим консультацию" class="working__img">
+					<picture>
+						<!-- <source media="(max-width: 1920px)" srcset="img/consulting.jpg"> -->
+						<source media="(max-width: 1366px)" srcset="img/consulting_1024.jpg">
+						<img src="img/consulting.jpg" alt="Проводим консультацию" class="working__img">
+					</picture>
 				</div>
 				
 			</section>

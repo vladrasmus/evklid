@@ -1,0 +1,163 @@
+/* --------------footer-------------- */
+
+
+footer {
+	margin-top: 100px;
+	background-color: #222;
+}
+
+.footer-container {
+	position: relative;
+	display: flex;
+	padding-top: 48px;
+	padding-left: 19px;
+	padding-bottom: 80px;
+
+	width: 101%;
+}
+
+.footer__menu {
+	min-width: 317px;
+}
+
+.footer__list {
+	margin-top: 16px;
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.footer__item {
+	margin-top: 9px;
+}
+
+.footer__link {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #CACACA;;
+}
+
+.footer__icons {
+	display: flex;
+	margin-top: 108px;
+}
+
+.footer__icon:not(:first-child) {
+	margin-left: 25px;
+}
+
+.footer__icon-link {
+	width: 60px;
+	height: 60px;
+}
+
+.footer__icon-facebook {
+	background-image: url('../img/fb.svg');
+}
+
+.footer__icon-vkontakte {
+	background-image: url('../img/vk.svg');
+
+}
+
+.footer__icon-instagram {
+	background-image: url('../img/instagram.svg');
+
+}
+
+.footer__icon-facebook, .footer__icon-vkontakte, .footer__icon-instagram {
+	background-repeat: no-repeat;
+}
+
+.footer__request {
+	margin-top: 11px;
+	margin-left: 282px;
+}
+
+.footer__request-title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 59px;
+
+	color: #CACACA;
+}
+
+.footer__form {
+	display: flex;
+	flex-direction: column;
+	margin-top: -3px;
+}
+
+.footer__field {
+	margin-top: 25px;
+	padding-left: 26px;
+	width: 570px;
+	height: 60px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	color: #CACACA;
+	
+	border: none;
+	background-color: #414141;
+}
+
+.footer__field-message {
+	padding-top: 16px;
+	padding-left: 26px;
+	height: 150px;
+	resize: none;
+}
+
+.footer__send {
+	margin-top: 31px;
+	width: 101%;
+}
+
+.footer__send-btn {
+	padding-top: 2px;
+	padding-left: 5px;
+	width: 269px;
+	height: 60px;
+
+
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.footer__send-checkbox {
+	margin-left: 20px;
+}
+
+.footer__send-agreement {
+	display: inline-block;
+	
+	text-align: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: #CACACA;
+}
+
+.footer__involment {
+	position: absolute;
+	right: -13px;
+	margin-top: 80px;
+	margin-left: 239px;
+	width: 357px;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	color: #CACACA;
+}

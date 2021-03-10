@@ -1,0 +1,392 @@
+/* Основная часть */
+/* --------------solutions-------------- */
+
+.solutions {
+	position: relative;
+	margin-top: 1px;
+	height: 620px;
+}
+
+.solutions__background {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: 1;
+}
+
+.solutions__descr {
+	/* конфликт ширины и строк текста solutions__title*/
+	position: relative;
+	padding-top: 105px;
+	padding-left: 78px;
+	width: 900.76px;
+}
+
+.solutions__title {
+	font-weight: 800;
+	font-size: 70.3742px;
+	line-height: 86px;
+
+	color: #FFFFFF;
+}
+
+.solutions__text {
+	margin-top: 19px;
+	width: 800px;
+
+	font-size: 23.5px;
+	font-weight: bold;
+	line-height: 29px;
+	color: #fff;
+}
+
+.solutions__btn {
+	display: block;
+	margin-top: 97px;
+	padding-top: 2px;
+	padding-left: 8px;
+	width: 280px;
+	height: 80px;
+
+
+	font-size: 23.4581px;
+}
+
+/* --------------about_us-------------- */
+
+.about {
+	position: relative;
+	/* left: 22px; */
+	margin-top: 100px;
+}
+
+.about__text {
+	margin-top: 22px;
+	width: 1235px;
+
+	line-height: 32px;
+	color: #333333;
+}
+
+.about__text-icon {
+	margin-top: 6px;
+	margin-left: 5px;
+
+	border-radius: 50%;
+	opacity: .8;
+	box-shadow: 0 5px 7px -2px;
+	cursor: pointer;
+}
+
+.about__cards {
+	display: flex;
+	margin-top: 44px;
+}
+
+.about__show-more-card {
+	position: relative;
+	padding-top: 446px;
+	width: 870px;
+	height: 622px;
+}
+
+.about__show-more-descr {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-left: 54px;
+	height: 100%;
+
+	background-color: rgba(0,0,0,0.5);
+}
+
+.about__show-more-text {
+	margin-top: -7px;
+	width: 497px;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 32px;
+	color: #FFFFFF;
+}
+
+.about__btn {
+	margin-top: -4px;
+	margin-left: 76px;
+	padding-top: 2px;
+	width: 176px;
+	height: 60px;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+
+	background-color: Transparent;
+	border: 3px solid #FF9900;
+
+}
+
+.about__btn:hover {
+	background-color: #FF9900;
+}
+
+.about__btn:active {
+	background-color: #E1670E;
+	border: 3px solid #E1670E;
+}
+
+.about__show-more-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: 1;
+}
+
+.about__small-cards {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	width: 870px;
+}
+
+.about__consultation {
+	padding-top: 67px;
+	padding-left: 300px;
+
+	background-image: url('../img/circle_and_cube.svg');
+	background-repeat: no-repeat;
+	background-position: 63px 71px;
+}
+
+.about__increasing {
+	padding-top: 64px;
+	padding-left: 298px;
+
+	background-image: url('../img/circle_and_gear.svg');
+	background-repeat: no-repeat;
+	background-position: 61px 51px;
+}
+
+/* --------------How_do_we_work-------------- */
+
+.working {
+	position: relative;
+	/* left: 112px; */
+	margin-top: 37px;
+}
+
+.working__steps {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 49px;
+	margin-left: 4px;
+	width: 469px;
+}
+
+.working__steps-item {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.working__steps-btn {
+	background-color: transparent;
+	border: none;
+}
+
+.working__steps-btn:hover {
+	color: #FF9900;
+}
+
+.working__steps-btn:active {
+	color: #E1670E;
+}
+
+.working__wrapper {
+	display: flex;
+	margin-top: 45px;
+}
+
+.working__descr {
+	width: 758px;
+}
+
+.working__text {
+	margin-top: 5px;
+
+	line-height: 32px;
+}
+
+.working__buttons {
+	margin-top: 60px;
+}
+
+.working__show-more {
+	padding-top: 4px;
+	padding-left: 6px;
+	width: 175px;
+	height: 60px;
+}
+
+.working__agreement {
+	margin-left: 30px;
+	width: 147px;
+	height: 60px;
+
+	vertical-align: top;
+
+	background-color: transparent;
+	border: 1px solid #333333;
+}
+
+.working__agreement:hover {
+	color: #FFFFFF;
+
+	background: #666666;
+	border: 1px solid #333333;
+}
+
+.working__agreement:active {
+	color: #FFFFFF;
+
+	background: #000000;
+	border: 1px solid #000000;
+}
+
+.working__img {
+	margin-top: auto;
+	margin-left: 124px;
+	width: 870px;
+	height: 465px;
+}
+
+/* --------------questions-------------- */
+
+.questions {
+	position: relative;
+	/* left: 24px; */
+	margin-top: 162px;
+}
+
+.questions__items {
+	margin-top: 37px;
+}
+
+.questions__item {
+	display: flex;
+	height: 111px;
+	align-items: center;
+	justify-content: space-between;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #333333;
+
+	transition-property: color;
+	transition-duration: .3s;
+	/* border-top: 1px solid #CACACA;
+	border-bottom: 1px solid transparent; */
+}
+
+/* .questions__item:last-child {
+	border-bottom: 1px solid #CACACA;
+} */
+
+.questions__item::before {
+	content:  '';
+	position: absolute;
+	display: block;
+	margin-top: -111px;
+	width: 100%;
+	height: 1px;
+	
+	background-color: #CACACA;
+}
+
+/* .questions__item:first-child .questions__item::before {
+	display: block;
+} */
+
+.questions__item::after {
+	content:  '';
+	position: absolute;
+	display: block;
+	margin-top: 111px;
+	width: 100%;
+	height: 1px;
+	
+	background-color: #CACACA;
+}
+
+.questions__item:hover ~ .questions__item::before {
+	background-color: #FF9900;
+	opacity: 0;
+}
+
+.questions__item::before, .questions__item::after {
+	transition-property: opacity, background-color;
+	transition-duration: .3s;
+}
+
+.questions__item:hover {
+	color: #FF9900;
+	
+	/* border-color: #FF9900; */
+	cursor: pointer;
+}
+
+.questions__item:hover::before {
+	display: block;
+
+	background-color: #FF9900;
+	z-index: 2;
+}
+
+.questions__item:hover::after {
+	background-color: #FF9900;
+	z-index: 1;
+}
+
+.questions__text {
+	max-width: 90%;
+}
+
+.questions__btn {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 6px;
+	width: 50px;
+	min-width: 50px;
+	height: 50px;
+
+	border: none;
+	border-radius: 50%;
+}
+
+.questions__btn::after {
+	content: "";
+	width: 31px;
+	height: 2px;
+
+	background-color: #000;
+}
+
+.questions__btn::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 31px;
+
+	background-color: #000;
+}
