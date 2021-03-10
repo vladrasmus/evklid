@@ -280,6 +280,7 @@
 }
 
 .questions__item {
+	position: relative;
 	display: flex;
 	height: 111px;
 	align-items: center;

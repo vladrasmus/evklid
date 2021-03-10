@@ -201,7 +201,7 @@
 	.working__img {
 		margin-top: 6px;
 		width: 100%;
-		height: 418px;
+		height: 444px;
 	} 
 
 	.footer__menu {
@@ -213,26 +213,9 @@
 		width: 150px;
 	}
 
-	.footer__link {
-		font-size: 16px;
-	}
-
-	.footer__icon-link {
-		width: 40px;
-		height: 40px;
-	}
-
-	.footer__icon-facebook, .footer__icon-vkontakte, .footer__icon-instagram {
-		background-size: 40px 40px;
-	}
-
 	.footer__request  {
 		margin: 0 auto;
 		max-width: 40%;
-	}
-
-	.footer__request-title {
-		font-size: 32px;
 	}
 
 	.footer__send-btn {
@@ -268,11 +251,12 @@
 	}
 
 	.solutions {
-		height: 665px;
+		height: auto;
 	}
 
 	.solutions__descr {
-		padding: 159px 10px 50px 44px;
+		padding: 159px 106px 50px 44px;
+		width: auto;
 	}
 
 	.solutions__title {	
@@ -282,7 +266,7 @@
 
 	.solutions__text {
 		margin-top: 10px;
-		width: 670px;
+		width: auto;
 
 		font-size: 20px;
 		line-height: 24px;
@@ -295,16 +279,19 @@
 		width: 287px;
 	}
 
+	.solutions__pic {
+		height: 100%;
+	}
+
 	.solutions__background {
 		top: -100px;
 		right: 0;
 		left: 0;
-		bottom: 0;
-		height: auto;
+		height: 127%;
 	}
 
 	.about {
-		margin-top: 61px;
+		margin-top: 124px;
 		margin-left: -4px;
 	}
 
@@ -342,8 +329,13 @@
 		margin-top: 51px;
 		padding-top: 66px;
 		padding-left: 351px;
+		padding-bottom: 65px;
 
 		background-position: 114px 76px;
+	}
+
+	.small-card {
+		height: auto;
 	}
 
 	.small-card-text {
@@ -358,6 +350,10 @@
 		background-position: 115px 62px;
 	}
 
+	.about__increasing {
+		padding-bottom: 65px;
+	}
+
 	.about__increasing-text {
 		margin-top: 6px;
 		width: 74%;
@@ -369,33 +365,118 @@
 	}
 
 	.working__descr {
-		width: 100%;
+		margin-left: 5px;
+		width: 47.1%;
+	}
+
+	.working__pic {
+		margin-left: auto;
 	}
 
 	.working__img {
-		src: url('../img/consulting_1024.jpg');
+		display: block;
+		margin-top: 10px;
+		width: auto;
+		height: 96%;
+	}
+
+	.working__buttons {
+		margin-top: 29px;
+	}
+
+	.working__show-more {
+		margin-bottom: 20px;
+	}
+
+	.working__agreement {
+		margin-left: 26px;
+		padding-top: 2px;
+	}
+
+	.questions {
+		margin-top: 34px;
+		margin-left: -3px;
+	}
+
+	.questions__item {
+		padding-top: 30px;
+		padding-bottom: 31px;
+		height: auto;
+	}
+
+	.questions__text {
+		margin-left: 3px;
+		max-width: 81%;
+
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+	.questions__item::before {
+		top: 0;
+		margin-top: 0;
+	}
+
+	.questions__item::after {
+		bottom: -1px;
+		margin-top: 0;
+	}
+
+	.questions__btn {
+		margin-right: -3px;
+	}
+
+	footer {
+		margin-top: 53px;
 	}
 
 	.footer-container {
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
+		padding-top: 33px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.footer__menu {
 		margin-top: 15px;
-		min-width: 45%;
+		min-width: auto;
+		max-width: 100%;
+		width: auto;
+	}
+
+	.footer__logo {
+		width: auto;
+	}
+
+	.footer__list {
+		margin-left: -2px;
 	}
 
 	.footer__request {
+		margin-top: 27px;
 		margin-right: 0;
 		margin-left: auto;
-		max-width: 50%;
+		max-width: 80%;
+		width: 58%;
+	}
+
+	.footer__send-btn {
+		width: 45%;
 	}
 
 	.footer__send-checkbox {
-		margin-left: 5px;
+		margin-left: 6px;
 	}
 
 	.footer__send-agreement {
-		font-size: 12px;
+		position: relative;
+		right: 5px;
+
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	.footer__involment {
+		display: none;
 	}
 }
