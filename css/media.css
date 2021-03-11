@@ -132,10 +132,10 @@
 		width: 75%;
 	}
 
-	.about__show-more-background {
+	/* .about__show-more-background {
 		width: 100%;
 		height: 100%;
-	}
+	} */
 
 	.about__small-cards {
 		width: 100%;
@@ -279,7 +279,7 @@
 		width: 287px;
 	}
 
-	.solutions__pic {
+	/* .solutions__pic {
 		height: 100%;
 	}
 
@@ -288,7 +288,7 @@
 		right: 0;
 		left: 0;
 		height: 127%;
-	}
+	} */
 
 	.about {
 		margin-top: 124px;
@@ -307,6 +307,7 @@
 		margin-left: 2px;
 		padding-top: 467px;
 		height: 639px;
+		
 		background-image: url('../img/worker_1024.jpg');
 	}
 
@@ -479,4 +480,25 @@
 	.footer__involment {
 		display: none;
 	}
+}
+
+@media (max-width: 768px) {
+	header {
+		height: 69px;
+	}
+
+	.header__burger {
+		margin-top: -4px;
+		margin-left: 10px;
+	}
+
+	.header__search {
+		margin-top: -1px;
+		width: 43px;
+		height: 24px;
+
+		background-size: 40px 24px;
+	}
+
+	
 }

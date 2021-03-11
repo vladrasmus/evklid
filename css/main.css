@@ -5,16 +5,20 @@
 	position: relative;
 	margin-top: 1px;
 	height: 620px;
-}
 
-.solutions__background {
+	background-image: url('../img/balconies.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/* Отпало, т.к. фоновое иззображение все таки не контентное */
+/* .solutions__background {
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 100%;
 
 	z-index: 1;
-}
+} */
 
 .solutions__descr {
 	/* конфликт ширины и строк текста solutions__title*/
@@ -90,6 +94,9 @@
 	padding-top: 446px;
 	width: 870px;
 	height: 622px;
+
+	background-image: url('../img/worker.jpg');
+	background-size: 100% 100%;
 }
 
 .about__show-more-descr {
@@ -140,13 +147,13 @@
 	border: 3px solid #E1670E;
 }
 
-.about__show-more-background {
+/* .about__show-more-background {
 	position: absolute;
 	top: 0;
 	left: 0;
 
 	z-index: 1;
-}
+} */
 
 .about__small-cards {
 	display: flex;
