@@ -5,7 +5,9 @@
 	position: relative;
 	margin-top: 1px;
 	height: 620px;
+}
 
+.solutions__container {
 	background-image: url('../img/balconies.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
