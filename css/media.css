@@ -666,3 +666,115 @@
 		margin-top: 12px;
 	}
 }
+
+@media (max-width: 568px) {
+	.solutions {
+		min-height: 262px;
+
+		background-image: url('../img/balconies_320.jpg');
+		background-size: 160%;
+		background-position: 0 -45px;
+	}
+
+	.solutions__descr {
+		padding: 70px 22px;
+	
+	}
+
+	.solutions__title {
+		font-size: 40px;
+		line-height: 60px;
+	}
+
+	.solutions__text {
+		margin-top: 40px;
+
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.solutions__btn {
+		margin-top: 80px;
+		margin-left: auto;
+	}
+
+	.about__show-more-card {
+		padding-top: 300px;
+		
+		background-image: url('../img/worker_320.jpg');
+		background-size: 100% 50%;
+		background-repeat: no-repeat;
+	}
+
+	.about__show-more-descr {
+		flex-direction: column;
+		padding: 0;
+
+		background-color: transparent;
+	}
+
+	.about__show-more-text {
+		width: 100%;
+
+		font-weight: normal;
+		color: #000;
+	}
+
+	.about__btn {
+		display: block;
+		margin-right: auto;
+		width: 162px;
+
+		color: #FF9900;
+	}
+
+	.about__consultation  {
+		padding: 62px 0 36px 0px;
+
+		background-size: 64px 49px;
+		background-position: 0 0;
+		border: none;
+	}
+
+	.about__small-cards .about__increasing {
+		padding: 62px 0 36px 0px;
+
+		background-size: 64px 55px;
+		background-position: 0 0;
+		border: none;
+	}
+
+	.working__show-more {
+		width: 55%;
+	}
+
+	.working__agreement  {
+		width: 37%;
+	}
+
+	.questions__text {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.footer__request {
+		max-width: 100%;
+	}
+
+	.footer__send {
+		flex-direction: column;
+		margin-top: 25px;
+	}
+
+	.footer__send-btn {
+		width: 50%;
+	}
+
+	.footer__send-agreement {
+		margin-top: 14px;
+	}
+
+	.footer__menu {
+		margin: 57px auto;
+	}
+}
